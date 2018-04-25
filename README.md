@@ -6,5 +6,5 @@ This framework is written for the aim of supplying the key features to our Bilke
 * Ata Sonat UZUN      : 
 * Taha KHURRAM        : 
 * Muhammad SABOOR     : Device package(s)
-* Ege Ozan ÖZYEDEK    : 
+* Ege Ozan ÖZYEDEK    : Base package(s)
 * Ege Hakan KARAAĞAÇ  : 
