@@ -11,14 +11,8 @@ Ege Hakan KARAAĞAÇ
 
 Work Distribution:
 Ufuk BOMBAR         : Database, Network, Base package(s)
-
 Ata Sonat UZUN      : 
-
 Taha KHURRAM        : 
-
 Muhammad SABOOR     : Device, Device Controller model classes
-
 Ege Ozan ÖZYEDEK    : 
-
 Ege Hakan KARAAĞAÇ  : 
-
