@@ -1,10 +1,14 @@
-# HAS Framework
-This framework is written for the aim of supplying the key features for our Bilkent CS102 project.
+# HAS-Framework
+Bilkent 2018 Spring Semester CS102 Home Automation System Project Device Application.
 
-## Authors & Work Distribution:
-* Ufuk BOMBAR         : Database, Network, Base package(s)
-* Ata Sonat UZUN      : 
-* Taha KHURRAM        : 
-* Muhammad SABOOR     : Device, Device Controller model classes
-* Ege Ozan ÖZYEDEK    : 
-* Ege Hakan KARAAĞAÇ  : 
+Contributors:
+Ufuk BOMBAR, Ata Sonat UZUN, Taha KHURRAM, Muhammad SABOOR, Ege Ozan ÖZYEDEK and Ege Hakan KARAAĞAÇ
+
+Work Distribution:
+Ufuk BOMBAR         : Database, Network, Base package(s) <br />
+Ata Sonat UZUN      : <br />
+Taha KHURRAM        : <br />
+Muhammad SABOOR     : Device, Device Controller model classes <br />
+Ege Ozan ÖZYEDEK    : <br />
+Ege Hakan KARAAĞAÇ  : <br />
+
