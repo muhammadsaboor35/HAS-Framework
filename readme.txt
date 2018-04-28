@@ -3,15 +3,12 @@ CodeCheckpoint_01
   Project Title: Home Automation System
   Project Description: Home Automation System, a system which focuses on providing the user a program in which they can monitor 
     data from sensor and control the temperature and lights of their house.
-  Status: 
-  Finished: 
-  In Progress:
-  Not Started:
+  Status: In progress
 
   Group Members and Work Done by Each Member
     Ufuk Bombar:
-    Muhammad Saboor:
-    Taha Khurram:
-    Ege Ozan Özyedek: Coded the Command class and CommandFactory class. Started coding CommandExecutor class and DataContainerFactory           class.
+    Muhammad Saboor: wrote Device classes, DeviceController classes, VirtualDeviceController classes and Pin Classes. Debugged GoogleSessionManager and GoogleDriveManager classes.
+    Taha Khurram: wrote GoogleSessionManager and GoogleDriveManager using Google OAuth 2.0 API and Google Drive API v2
+    Ege Ozan Özyedek: Coded the Command class, CommandFactory class, CommandExecutor class.
     Ata Sonat Uzun:
     Ege Hakan Karaağaç:
