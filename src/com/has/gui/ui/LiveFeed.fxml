@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="340.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <ScrollPane prefHeight="340.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="191.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="23.0" prefHeight="89.0" prefWidth="106.0" text="Lots of Cameras" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </left>
+   <center>
+      <Label prefHeight="63.0" prefWidth="95.0" text="Video Options" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
