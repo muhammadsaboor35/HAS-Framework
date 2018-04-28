@@ -86,9 +86,6 @@ public class GoogleDriveManager {
       return files;
    }
    
-   // implement getOnlyFiles
-   // implement getOnlyFolders using .setQ("mimeType='folder wali chez'")
-   
    public static void download( String title, String authToken, String path ) {
       try {
          final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
@@ -108,7 +105,6 @@ public class GoogleDriveManager {
                extension = file.getFileExtension();
             }
             System.out.println( fileID );
-            //create a fucking hashmap for this < Name, ID >
             
             class CustomProgressListener implements MediaHttpDownloaderProgressListener {
                public void progressChanged(MediaHttpDownloader downloader) {
