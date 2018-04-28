@@ -12,6 +12,6 @@ CodeCheckpoint_01
     Ufuk Bombar:
     Muhammad Saboor:
     Taha Khurram:
-    Ege Ozan Özyedek: Coded the Command class, CommandFactory class, CommandExecutor class.
+    Ege Ozan Özyedek: Coded the Command class and CommandFactory class. Started coding CommandExecutor class and DataContainerFactory           class.
     Ata Sonat Uzun:
     Ege Hakan Karaağaç:
