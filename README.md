@@ -8,5 +8,5 @@ Please see [Wikipage](https://github.com/Bombar4545/HAS-Framework/wiki) for more
 * Ata Sonat UZUN      : 
 * Taha KHURRAM        : 
 * Muhammad SABOOR     : Device package(s)
-* Ege Ozan ÖZYEDEK    : Base package(s)
+* Ege Ozan ÖZYEDEK    : Base package(s), CommandFactory class
 * Ege Hakan KARAAĞAÇ  : 
