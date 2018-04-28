@@ -4,9 +4,9 @@ This framework is written for the aim of supplying the key features to our Bilke
 Please see [Wikipage](https://github.com/Bombar4545/HAS-Framework/wiki) for more information.
  
 ## Authors & Work Distribution:
-* Ufuk BOMBAR         : Database, Network, Base package(s)
-* Ata Sonat UZUN      : 
-* Taha KHURRAM        : 
-* Muhammad SABOOR     : Device package(s)
+* Ufuk BOMBAR         : Database, Network, Base package(s), notifications
+* Ata Sonat UZUN      : GUI
+* Taha KHURRAM        : Google authentication, Google drive, config
+* Muhammad SABOOR     : Device package(s), options
 * Ege Ozan ÖZYEDEK    : Base package(s), CommandFactory class
-* Ege Hakan KARAAĞAÇ  : 
+* Ege Hakan KARAAĞAÇ  : GUI
