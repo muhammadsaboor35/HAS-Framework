@@ -1,15 +1,18 @@
 package com.has.device;
 
+import java.util.ArrayList;
+
 /**
  * Pin is the object representation of a pin in raspberry-pi
- * 
- * @author Ufuk BOMBAR
+ *
+ * @author Ufuk BOMBAR, Ege Ozan Özyedek
  * @since 01.05.2018 23:07
- * @version 1.0
+ * @version 2.0
  */
 public class Pin
 {
     public static final int VIRTUAL_PIN = -1;
+    public static ArrayList<Integer> occupiedPins;
     private int pin;
 
     /**
@@ -18,14 +21,16 @@ public class Pin
      */
     public Pin( int pin ) throws Exception
     {
-        if ( !isValid( pin ) )
+        if ( !isValid( ) )
         {
             pin = Pin.VIRTUAL_PIN;
             throw new Exception( "Pin number is not valid!" );
+
         }
         else
+            occupiedPins.add( pin);
             this.pin = pin;
-        
+
     }
 
     /**
@@ -37,7 +42,7 @@ public class Pin
     }
 
     // TODO #001: Write input-output methods that will controll the harware in raspberry-pi, also add code to constructor
-    
+
 
     /**
      * Gets the pin number
@@ -50,12 +55,14 @@ public class Pin
 
     /**
      * Checks the pin is valid
-     * @param pin the pin
      * @return true if pin is virtual or valid, false otherwise
      */
-    public boolean isValid( int pin )
+    public boolean isValid()
     {
-        return pin == VIRTUAL_PIN || pin >= 0 ? true : false;
+        if ( ( pin > 0 && occupiedPins.indexOf( pin) == -1) || isVirtual())
+            return true;
+        else
+            return false;
     }
 
     /**
@@ -76,6 +83,5 @@ public class Pin
     {
         return pin == VIRTUAL_PIN ? "VIRTUAL_PIN" : pin + "";
     }
-
 
 }
