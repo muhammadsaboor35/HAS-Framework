@@ -60,7 +60,8 @@ public class GlobalOptions {
    //methods
    
    /**
-    * 
+    * returns the property as a data container
+    * @return DataContainer properties
     */
    public DataContainer getProperties() {
       return properties;
