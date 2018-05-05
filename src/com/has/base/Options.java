@@ -26,18 +26,21 @@ public class Options {
    //methods
    
    /**
-    * 
+    * returns the localOptions
+    * @return LocalOptions localOptions
     */
    public LocalOptions getLocal() {
       return this.localOptions;
    }
    
    /**
-    * 
+    * returns globalOptions
+    * @return GlobalOptions globalOptions
     */
    public GlobalOptions getGlobal() {
       return this.globalOptions;
    }
+   
    
    private static String readFile(String pathname) throws IOException {
 
