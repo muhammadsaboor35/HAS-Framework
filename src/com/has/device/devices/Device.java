@@ -5,18 +5,21 @@ import com.has.device.Room;
 import com.has.device.controllers.DeviceController;
 
 /**
- * 
- * 
- * @author Ufuk BOMBAR
+ *
+ *
+ * @author Ufuk BOMBAR, Ege Ozan Özyedek
  * @since 01.05.2018 23:07
- * @version 1.0
+ * @version 2.0
  */
 public abstract class Device
 {
+
+    public static final int MAIN_PIN_ID = 0;
+
     protected int id;
     protected Room room;
     protected String displayName;
-    protected Pin pin;
+    protected Pin[] pins;
     protected final DeviceController dc;
 
     /**
@@ -27,15 +30,24 @@ public abstract class Device
      * @param pin pin number
      * @param dc pair DeviceController object
      */
-    public Device( int id, Room room, String displayName, Pin pin, DeviceController dc ) throws Exception
+    public Device( int id, Room room, String displayName, Pin[] pin, DeviceController dc ) throws Exception
     {
-        if ( !this.isVirtual() && pin.isVirtual() )
+        boolean virtual;
+        virtual = true;
+        for (int i = 0; i < pin.length; i++) {
+            if ( !pin[i].isVirtual()) {
+                virtual = false;
+                i = pin.length;
+            }
+        }
+
+        if ( !this.isVirtual() && virtual )
             throw new Exception( "Non-virtual Device cannot have a virtual pin" );
 
         this.id = id;
         this.room = room;
         this.displayName = displayName;
-        this.pin = pin;
+        pins = pin;
         this.dc = dc;
         room.getDevices().add( this );
     }
@@ -95,13 +107,22 @@ public abstract class Device
     }
 
     /**
-     * Gets the pin object
-     * @return the pin
+     * Method to return the number of pins
+     * @return the number of pins
      */
-    public Pin getPin()
-    {
-        return pin;
+    public int getPinCount() {
+        return pins.length;
     }
+
+    /**
+     * Method which returns a specific pin at the desired index
+     * @param index, the Pin index
+     * @return Pin at the requested index
+     */
+    public Pin getPin( int index) {
+        return pins[ index];
+    }
+
 
     @Override
     public String toString()
@@ -119,5 +140,5 @@ public abstract class Device
         return sb.toString();
     }
 
-    // TODO 006
+
 }
