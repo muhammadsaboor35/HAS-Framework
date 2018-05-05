@@ -41,7 +41,8 @@ public class LocalOptions implements Serializable {
    //methods
    
    /**
-    * 
+    * returns the properties
+    * @return DataContainer properties
     */
    public DataContainer getProperties() {
       return properties;
