@@ -12,10 +12,9 @@ import java.util.TimerTask;
 import static com.has.base.DataType.*;
 
 /**
- * @author EgeOzan
- * @since
- * @version
- *
+ * @author EgeOzanÖzyedek
+ * @since 8 May  2018
+ * @version 1.0
  */
 public class LinuxCommandExecutor
 {
