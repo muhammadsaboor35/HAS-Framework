@@ -316,7 +316,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_LIGHT_INTENSITY:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((LightSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setIntensity((double) command.getArgument().getData(1));
                         break;
 
@@ -337,7 +337,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_LPG_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setLPGConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -346,7 +346,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_CO_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setCOConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -355,7 +355,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_METHANE_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setMethaneConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -364,7 +364,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_ETHANE_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setEthaneConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -373,7 +373,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_SMOKE_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setSmokeConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -382,7 +382,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_PROPANE_CONCENTRATION:
                         if (command.getArgument().equals(new DataStructure(INT, DOUBLE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((GasSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setPropaneConcentration((double) command.getArgument().getData(1));
                         break;
 
@@ -397,7 +397,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_CAMERA_IMAGE:
                         if (command.getArgument().equals(new DataStructure(INT, BUFFERED_IMAGE)))
-                            ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                            ((CameraController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                     .setImage((BufferedImage) command.getArgument().getData(1));
                         break;
 
@@ -407,7 +407,7 @@ public class LinuxCommandExecutor
                      */
                     case SET_DISTANCE:
                         if (command.getArgument().equals(new DataStructure(INT, double)))
-                        ((TempSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
+                        ((UltrasonicSensorController) configuration.getDeviceControllerById((long) command.getArgument().getData(0)))
                                 .setDistance((double) command.getArgument().getData(1));
                         break;
 
